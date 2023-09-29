@@ -28,7 +28,7 @@ header {
 
 }
 
-img{
+.icon {
     width: 3rem;
 }
 
@@ -75,4 +75,39 @@ main {
     height: 100vh;
     width: 67vw;
     background-color: rgb(var(--black), 0.97);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset 0 -10px 50px -20px rgb(var(--brown-light));
+}
+
+.taurus-div {
+    filter: drop-shadow(0px 0px 10px rgb(var(--brown-light)));
+    transition: 1s ease-in-out all;
+    position: relative;
+
+}
+
+.taurus-icon {
+    width: 20rem;
+    height: 20rem;
+    color: rgb(var(--brown-light));
+    position: absolute;
+    left: -10vw;
+
+}
+
+.taurus-div:hover {
+    filter: drop-shadow(0px 0px 10px rgb(var(--silver)));
+    text-shadow: 0 0 1px rgb(var(--silver));
+}
+
+.taurus-letter {
+    font-size: 7rem;
+    font-weight: -100;
+    color: rgba(192, 192, 192, 0.208);
+    position: absolute;
+    top: 150px;
+    left: -10vw;
+    font-family: 'Great Vibes', cursive;
 }
