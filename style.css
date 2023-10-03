@@ -119,18 +119,41 @@ span,p,input,button{
     border-radius: 25px;
     width: 45vw;
     height: 60vh;
-    margin: 20rem auto 2rem;
-    background-color: rgb(var(--brown-light),0.05);
+    margin: 19rem auto 3rem;
     box-shadow: 0 0 10px 1px rgb(var(--silver));
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10rem;
 }
 
 .inputs:hover{
     border: 2px solid  rgb(var(--brown-light),0.1);
-    background-color: rgb(var(--silver),0.05);
     box-shadow: 0 0 10px 1px rgb(var(--brown-light));
     cursor: pointer;
-    scale: 1.01;
+}
+
+input{
+    background-color: rgba(255, 255, 255, 0.062);
+    border: none;
+    color: rgb(var(--silver));
+    padding: 0.5rem 0.7rem 0;
+    border-radius: 5px;
+    font-size: 2.4rem;
+    border-bottom: 2px solid rgb(var(--silver),0.5);
+    transition: none;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(var(--brown-light),0.5);
+}
+
+.names,.mail-phone,.password{
+    display: flex;
+    gap: 10rem;
 }
 
 .last-items{
