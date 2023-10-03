@@ -150,6 +150,7 @@ input {
     transition: all 0.5s;
     font-family: 'Quicksand', sans-serif;
     margin-left: 1rem;
+    width: 90%;
 }
 
 input:focus {
