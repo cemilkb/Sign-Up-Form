@@ -222,7 +222,7 @@ a:active {
     font-family: 'Quicksand', sans-serif;
 }
 
-div[class="last-items"]+p {
+form+p {
     font-size: 2rem;
     color: rgb(var(--silver));
     margin: auto 3rem 3rem;
@@ -237,4 +237,13 @@ div[class="last-items"]+p {
         text-shadow: 0 0 5px rgb(var(--silver)),0 0 10px rgb(var(--silver)),0 0 20px rgb(var(--silver));
     }
 
+}
+
+input+span{
+    color: red;
+    font-family: 'Quicksand', sans-serif;
+    display: none;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: -1rem
 }
