@@ -80,12 +80,6 @@ main {
     box-shadow: inset 0 0 40px -20px rgb(var(--brown-light));
 }
 
-span,
-input,
-button {
-    font-family: 'Great Vibes', cursive;
-}
-
 .taurus-div {
     filter: drop-shadow(0px 0px 10px rgb(var(--brown-light)));
     transition: 1s ease-in-out all;
@@ -179,10 +173,11 @@ input:focus {
 }
 
 button {
+    font-family: 'Quicksand', sans-serif;
     font-size: 2.5rem;
     color: rgb(var(--brown-light));
     background-color: rgba(var(--silver), 0.1);
-    padding: 0.4rem 1rem 0rem;
+    padding: 0.4rem 1rem ;
     border: none;
     border-radius: 20px;
     box-shadow: 0 0 10px 1px rgb(var(--brown-light));
@@ -199,11 +194,11 @@ button:active {
     scale: 0.98;
 }
 
-a {
+.sign{
     color: rgb(var(--brown-light));
     text-decoration: none;
-    font-family: 'Great Vibes', cursive;
     transition: text-shadow 0.3s ease-in-out;
+    font-family: 'Quicksand', sans-serif;
 }
 
 a:hover {
@@ -227,7 +222,7 @@ form+p {
     color: rgb(var(--silver));
     margin: auto 3rem 3rem;
     font-family: 'Great Vibes', cursive;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     animation: deneme 4s infinite;
 }
 
