@@ -33,13 +33,13 @@
                 <div class="names">
                     <div>
                         <p class="input-p">Name</p>
-                        <input type="text" required name="name">
-                        <span id="name">*Doğru düzgün bişi gir</span>
+                        <input type="text" required name="name" pattern="^[A-Za-z]+$" minlength="3">
+                        <span id="name">*Invalid name</span>
                     </div>
                     <div>
                         <p class="input-p">Surname</p>
-                        <input type="text" required name="surname">
-                        <span id="surname">*Doğru düzgün bişi gir</span>
+                        <input type="text" required name="surname" pattern="^[A-Za-z]+$" minlength="3">
+                        <span id="surname">*Invalid surname</span>
                     </div>
                 </div>
 
@@ -47,31 +47,33 @@
                     <div>
                         <p class="input-p">E-mail:</p>
                         <input type="email" required name="mail">
-                        <span id="mail">*Doğru düzgün bişi gir</span>
+                        <span id="mail">*Invalid e-mail address.</span>
                     </div>
                     <div>
                         <p class="input-p">Phone Number:</p>
-                        <input type="text" required name="phone">
-                        <span id="phone">*Doğru düzgün bişi gir</span>
+                        <input type="text" required name="phone" pattern="^[0-9]+$" min="10">
+                        <span id="phone">*Invalid phone number</span>
                     </div>
                 </div>
                 <div class="password">
                     <div>
                         <p class="input-p">Password</p>
-                        <input type="password" required name="password">
-                        <span id="password">*Doğru düzgün bişi gir</span>
+                        <input type="password" required name="password"
+                            pattern="^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[@#$%^&+=!]).+$" minlength="8">
+                        <span id="password">*Invalid password.</span>
                     </div>
                     <div>
                         <p class="input-p">Password Check</p>
                         <input type="password" required name="password2">
-                        <span id="password2">*Doğru düzgün bişi gir</span>
+                        <span id="password2">*Paswword not match.</span>
                     </div>
                 </div>
             </div>
 
             <div class="last-items">
                 <button type="submit" id="s-button">Create Account</button>
-                <p style="font-family: 'Quicksand', sans-serif;">Allready member? <a href="Sign-up/index.html" class="sign">Sign
+                <p style="font-family: 'Quicksand', sans-serif;">Allready member? <a href="Sign-up/index.html"
+                        class="sign">Sign
                         up</a></p>
             </div>
         </form>
