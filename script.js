@@ -1,6 +1,6 @@
 let inputs = document.querySelectorAll("input")
-let password = document.querySelector(`input[name="password"]`)
-let password2 = document.querySelector(`input[name="password2"]`)
+let pass1 = document.querySelector(`input[name="password"]`)
+let pass2    = document.querySelector(`input[name="password2"]`)
 let sButton = document.querySelector("#s-button")
 let check = null
 let ok = 0
@@ -53,12 +53,18 @@ inputs.forEach(e => {
     })
 });
 
-if (password.value === password2.value) {
-    password2.validity.valid = false
+// Password matching
+
+pass1.addEventListener("input", validate)
+pass2.addEventListener("input", validate)
+
+function validate() {
+    if (pass1.value === pass2.value) {
+        pass2.setCustomValidity("")
+    } else {
+        pass2.classList.add(":invalid")
+        pass2.setCustomValidity("Passwords do not match")
+    }
 }
 
-
-sButton.addEventListener("click", (e) => {
-
-})
 
